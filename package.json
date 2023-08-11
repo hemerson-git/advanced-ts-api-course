@@ -8,7 +8,7 @@
     "start": "npm run build && node dist/src/index.js",
     "dev": "npx ts-node-dev src/index.ts",
     "dev:w": "npx ts-node-dev src/index.ts --watch",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx jest",
     "test:functional": "npx jest --projects ./test --runInBand",
     "lint": "npx eslint ./src ./test --ext .ts",
     "lint:fix": "npx eslint ./src ./test --ext .ts --fix",
@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "@overnightjs/core": "^1.7.6",
+    "axios": "^1.4.0",
     "body-parser": "^1.20.2",
     "express": "^4.18.2",
     "module-alias": "^2.2.3"
